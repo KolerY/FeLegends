@@ -119,6 +119,7 @@ main::after {
     max-width: 100%; /* Ensure the image does not exceed its container */
     width: 10%;
     height: auto; /* Maintain aspect ratio */
+    margin-left: 100PX;
 }
 
 .aside-img-right {
@@ -126,6 +127,7 @@ main::after {
     right: 0; /* Align it to the left side of the page */
     top: 50%; /* Position it vertically at 50% from the top */
     transform: translateY(-50%); /* Center it vertically */
+    
 }
 
 .aside-img-right img {
@@ -133,6 +135,7 @@ main::after {
     width: 10%;
     float: right;
     height: auto; /* Maintain aspect ratio */
+    margin-right: 100PX;
 }
 
 /* FOOTER */
@@ -149,7 +152,7 @@ footer {
 
 /* media queries */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1690px) {
     .aside-img-left,
     .aside-img-right {
         display: none;
