@@ -51,6 +51,11 @@ nav a:hover {
     width: 15%;
 }
 
+/* EFFECT ACTIVE SUR LA NAV BAR */
+#home {
+    background-color: #333;
+}
+
 /* content main */
 
 .content-main {
