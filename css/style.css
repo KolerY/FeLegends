@@ -59,6 +59,7 @@ nav a:hover {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
+    margin-left: 0;
 }
 
 .card {
@@ -104,9 +105,17 @@ nav a:hover {
 }
 
 /* discord widget */
+.discord-wrapper {
+    width: 25%;
+    float: left;
+}
 .widget-discord {
-    text-align: center;
     padding-bottom: 20px;
+    padding-left: 70px
+}
+
+.discord-header {
+    margin-top: 0;
 }
 
 .widget-discord h3 {
@@ -117,7 +126,10 @@ nav a:hover {
 .discord-link {
     text-decoration: none;
     color: #333;
-    text-align: center;
+}
+
+#hidden {
+    display: none;
 }
 
 /* button RULES */
@@ -170,5 +182,25 @@ footer {
     .aside-img-left,
     .aside-img-right {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    .discord-wrapper {
+        display: none;
+    }
+    #hidden {
+        display: block;
+        text-align: center;
+    }
+    .content-main {
+        margin: 0;
+        padding-left: 140px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .discord-header-bottom {
+        color: white;
     }
 }
