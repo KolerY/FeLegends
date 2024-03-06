@@ -22,6 +22,7 @@ main {
 /* nav bar */
 .nav-bar h1 {
     margin: 0;
+    color: rgb(140, 140, 140);
 }
 
 header {
@@ -29,6 +30,22 @@ header {
     color: #fff;
     padding: 10px;
     text-align: center;
+}
+
+.header-f {
+    color: 	rgb(153, 0, 0);
+}
+
+.header-e {
+    color: rgb(0, 77, 153);
+}
+
+.header-w {
+    color: 	rgb(153, 0, 0);
+}
+
+.header-e {
+    color: rgb(0, 77, 153);
 }
 
 nav {
