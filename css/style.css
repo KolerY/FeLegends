@@ -1,4 +1,4 @@
-
+/* FONT : font-family: "Oswald", sans-serif; */
 *{
     box-sizing: border-box;
 }
@@ -13,6 +13,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+main {
+    background-color:rgb(22, 26, 35);
 }
 
 /* nav bar */
@@ -50,93 +54,103 @@ nav a:hover {
 /* content main */
 
 .content-main {
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    background-color: #f5f5f5; /* Light gray background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.content-main h2,
-.content-main h3 {
-    text-align: center; /* Center-align headers */
-}
-
-.content-main h2 {
-    margin: 0;
-    padding-top: 10px;
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.content-main h3 {
-    color: #555;
-    font-size: 20px;
+.card {
+    width: 45%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-bottom: 20px;
     margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
     margin-bottom: 10px;
 }
 
-.content-main p {
-    color: #444;
+.card p {
+    font-size: 16px;
+    color: #666;
     line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: center;
-}
-main {
-    position: relative; /* Ensure pseudo-elements are positioned relative to the main */
 }
 
-main::before,
-main::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: calc((100vw - 1200px) / 2); /* Adjust as needed */
-    z-index: -1;
-}
-
-main::before {
-    left: 0;
-    background-color:rgb(22, 26, 35); /* Left background color */
-}
-
-main::after {
-    right: 0;
-    background-color:rgb(22, 26, 35); /* Right background color */
-}
-
-.aside-img-left {
-    position: fixed; /* Position the aside element */
-    left: 0; /* Align it to the left side of the page */
-    top: 50%; /* Position it vertically at 50% from the top */
-    transform: translateY(-50%); /* Center it vertically */
-}
-
-.aside-img-left img {
-    max-width: 100%; /* Ensure the image does not exceed its container */
-    width: 10%;
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 100PX;
-}
-
-.aside-img-right {
-    position: fixed; /* Position the aside element */
-    right: 0; /* Align it to the left side of the page */
-    top: 50%; /* Position it vertically at 50% from the top */
-    transform: translateY(-50%); /* Center it vertically */
+.staff-card {
+    font-size: 20px;
+    color: #333;
     
 }
 
-.aside-img-right img {
-    max-width: 100%; /* Ensure the image does not exceed its container */
-    width: 10%;
-    float: right;
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 100PX;
+.staff-container {
+    display: flex;
+    justify-content: space-between;
 }
+
+.left-column, .right-column {
+    flex: 1;
+}
+
+.button-link {
+    text-decoration: none;
+}
+
+/* discord widget */
+.widget-discord {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.widget-discord h3 {
+    font-size: 24px;
+    color: white;
+}
+
+.discord-link {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+
+/* button RULES */
+
+.button-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+    border-radius: 6px;
+    border: none;
+  
+    background: #6E6D70;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+    color: #DFDEDF;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-12:focus {
+    box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+    outline: 0;
+  }
+  
+  .button-12:hover {
+    background-color: #333;
+  }
+
+  #imageToShow {
+    width: 100%;
+  }
 
 /* FOOTER */
 

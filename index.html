@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>FeLegends</title>
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,29 +33,64 @@
     <main>
         <div class="container">
             <div class="content-main">
-                <h2>About Our Clan</h2>
-                <p>Welcome to the official website of our Old School RuneScape clan! We are a group of ironman adventurers dedicated to conquering challenges and forging friendships in the world of Gielinor.</p>
-                <h3>Our Mission</h3>
-                <p>Our mission is to create a welcoming and supportive community where members can enjoy playing Old School RuneScape together, achieve their goals, and make lasting memories.</p>
-                <h3>Membership</h3>
-                <p>We welcome players that are ironman of all skill levels and backgrounds to join our clan. Whether you're a seasoned veteran or a newcomer to Gielinor, there's a place for you in our community. To join, simply [Apply in our Discord].</p>
-                <h3>Activities and Events</h3>
-                <p>Our clan hosts a variety of activities and events, including PvE boss fights, skill training sessions, social gatherings, and more. There's always something exciting happening in our community!</p>
-                <h3>Leadership</h3>
-                <p>Our clan is led by a dedicated team of officers who work tirelessly to ensure our community thrives. Meet our leaders [Tbk , Charlo , Smellysackz , Kolernator , GIM Stevo].</p>
-                <h3>Rules and Expectations</h3>
-                <p>To maintain a positive and respectful environment, we have established guidelines that all members are expected to follow. Please familiarize yourself with our rules [link to rules page or document].</p>
-                <h3>Get Involved</h3>
-                <p>Ready to join the adventure? Visit our [Join Us] page to learn more about becoming a member of our clan. If you have any questions or would like to get in touch with us, feel free to contact our leadership team.</p>
-                <h3>Future Plans</h3>
-                <p>As we look to the future, we're excited to continue growing our community, taking on new challenges, and creating unforgettable memories together. Stay tuned for updates on upcoming events and initiatives!</p>
+                <div class="card">
+                    <h2>About Our Clan</h2>
+                    <p>Welcome to the official website of our Old School RuneScape clan! We are a group of ironman adventurers dedicated to conquering challenges and forging friendships in the world of Gielinor.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>Our mission is to create a welcoming and supportive community where members can enjoy playing Old School RuneScape together, achieve their goals, and make lasting memories.</p>
+                </div>
+                <div class="card">
+                    <h2>Membership</h2>
+                    <p>We welcome players that are ironman of all skill levels and backgrounds to join our clan. Whether you're a seasoned veteran or a newcomer to Gielinor, there's a place for you in our community. 
+                    </p>
+                    <p class="discord-link">
+                    To join, simply <a href="#discord" class="discord-link"><strong>[Apply in our Discord]</strong></a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>Activities and Events</h2>
+                    <p>Our clan hosts a variety of activities and events, including PvE boss fights, skill  training sessions, social gatherings, and more. There's always something exciting happening in our community!</p>
+                </div>
+                <div class="card">
+                    <h2>Leadership</h2>
+                    <p>Our clan is led by a dedicated team of officers who work tirelessly to ensure our community thrives.
+                    </p>
+                    <h3 class="staff-card">Meet our staff !</h3>
+                    <div class="staff-container">
+                        <div class="left-column">
+                            <strong><p>Tbk</p></strong>
+                            <strong><p>Charlo</p></strong>
+                            <strong><p>Smellysackz</p></strong>
+                        </div>
+                        <div class="right-column">
+                            <strong><p>Kolernator</p></strong>
+                            <strong><p>GIM Stevo</p></strong>
+                            <strong><p>Janki</p></strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>Rules and Expectations</h2>
+                    <p>To maintain a positive and respectful environment, we have established guidelines that all members are expected to follow. Please familiarize yourself with our rules                      
+                    </p>
+                    <button class="button-12" role="button" id="rulesButton">link to rules page</button>
+                    <img id="imageToShow" src="./image/rules-image.png" alt="image to show" style="display: none;">
+                </div>
+                <div class="card">
+                    <h2>Get Involved</h2>
+                    <p>Ready to join the adventure? Visit our [Join Us] page to learn more about becoming a member of our clan. If you have any questions or would like to get in touch with us, feel free to contact our leadership team.</p>
+                </div>
+                <div class="card">
+                    <h2>Future Plans</h2>
+                    <p>As we look to the future, we're excited to continue growing our community, taking on new challenges, and creating unforgettable memories together. Stay tuned for updates on upcoming events and initiatives!</p>
+                </div>
             </div>
-            <aside class="aside-img-left">
-                <img src="./image/ironman-logo-transparency.png" alt="Ironman-logo">
-            </aside>
-            <aside class="aside-img-right">
-                <img src="./image/ironman-logo-transparency.png" alt="Ironman-logo">
-            </aside>
+            <div class="widget-discord" id="discord">
+                <h3>Make sure to join our discord !</h3>
+                <iframe src="https://discord.com/widget?id=1136254061159661588&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
         </div>
     </main>
 </body>
