@@ -128,6 +128,11 @@ nav a:hover {
     color: #333;
 }
 
+.discord-link a:hover {
+    background-color: rgb(22, 26, 35);
+    color: white;
+}
+
 #hidden {
     display: none;
 }
