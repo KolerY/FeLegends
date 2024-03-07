@@ -23,6 +23,7 @@ main {
 .nav-bar h1 {
     margin: 0;
     color: rgb(140, 140, 140);
+    margin-left: 200px;
 }
 
 header {
@@ -52,6 +53,7 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
+    margin-left: 200px;
 }
 
 nav a {
@@ -66,6 +68,7 @@ nav a:hover {
 
 .logo img {
     width: 15%;
+    margin-left: 200px;
 }
 
 /* EFFECT ACTIVE SUR LA NAV BAR */
@@ -131,16 +134,11 @@ nav a:hover {
 }
 .widget-discord {
     padding-bottom: 20px;
-    padding-left: 70px
+    width: 20%;
 }
 
 .discord-header {
     margin-top: 0;
-}
-
-.widget-discord h3 {
-    font-size: 24px;
-    color: white;
 }
 
 .discord-link {
@@ -228,6 +226,15 @@ footer {
     .discord-header-bottom {
         color: white;
     }
+    nav {
+        margin: 0;
+    }
+    .logo img{
+        margin: 0;
+    }
+    .nav-bar h1 {
+        margin: 0;
+    }
 }
 
 
@@ -237,10 +244,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
-  padding: 30px;
-  @media screen and (max-width: 991px) {
-    grid-template-columns: 1fr;
-  }
+  
 }
 
 .container-title {
@@ -259,6 +263,7 @@ footer {
   border: 0;
   width: 100%;
   margin-inline: auto;
+  padding: 0;
 }
 
 .container-card {
