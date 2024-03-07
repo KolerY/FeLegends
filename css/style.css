@@ -23,7 +23,7 @@ main {
 .nav-bar h1 {
     margin: 0;
     color: rgb(140, 140, 140);
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 header {
@@ -53,7 +53,7 @@ nav {
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 nav a {
@@ -68,7 +68,7 @@ nav a:hover {
 
 .logo img {
     width: 15%;
-    margin-left: 200px;
+    margin-left: 120px;
 }
 
 /* EFFECT ACTIVE SUR LA NAV BAR */
